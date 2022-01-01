@@ -36,4 +36,7 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Rubik](https://fonts.google.com/specimen/Rubik)
-- Weights: 300, 400, 500
+- Weights: 
+- Light 300,
+- Regular 400,
+- Medium 500

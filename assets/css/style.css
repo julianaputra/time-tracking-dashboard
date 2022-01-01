@@ -4,3 +4,110 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
 }
+
+body {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main {
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+}
+
+.container {
+    padding: 0 24px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    max-width: 1110px;
+    margin: auto;
+}
+
+.profile-card {
+    border-radius: 14px;
+    background-color: hsl(235, 46%, 20%);
+    /* margin-bottom: 24px; */
+}
+
+.activity-card:hover {
+    cursor: pointer;
+}
+.activity-card:hover .activity-card__container {
+    background-color: hsl(235, 45%, 61%);
+}
+
+.activity-list {
+    /* display: flex; */
+    width: 100%;
+}
+
+@media (min-width: 992px) { 
+    .container {
+        padding: 0;
+        gap: 30px;
+        grid-template-columns: 1fr 3fr;
+    }
+    .activity-list {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+ }
+
+.activity-card {
+    border-radius: 14px;
+    background-color: hsl(15, 100%, 70%);
+    padding-top: 38px;
+    /* margin-bottom: 24px; */
+    position: relative;
+    overflow: hidden;
+}
+
+.activity-card__activity-icon {
+    position: absolute;
+    top: -10px;
+    right: 16px;
+    z-index: 1;
+}
+
+.activity-card__container {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 14px 14px 0 0;
+    z-index: 2;
+    position: relative;
+    padding: 24px 28px;
+    transition: all .3s ease;
+}
+
+.activity-card__text-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-card__title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.activity-card__ellipsis-icon {
+    fill: #BBC0FF;
+    transition: all ease .3s;
+}
+.activity-card__ellipsis-icon:hover {
+    fill: #fff;
+    cursor: pointer;
+}
+
+.activity-card__current {
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.activity-card__previous {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(236, 100%, 87%)
+}
