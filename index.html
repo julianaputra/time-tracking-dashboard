@@ -1,172 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/img/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <title>Hostmost</title>
+    <!-- <title>Frontend Mentor | Time tracking dashboard</title> -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-  <title>Frontend Mentor | Time tracking dashboard</title>
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
-  <!-- Custom Style -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-  <main>
-    <div class="container">
-      <div class="profile-card">
-        Report for
-        Jeremy Robson
-      
-        Daily
-        Weekly
-        Monthly
+  <body>
+    <main>
+      <div class="container">
+        <div class="profile-card">
+          <div class="profile-card__head">
+            <img
+              class="profile-card__profile-picture"
+              src="assets/img/image-jeremy.png"
+              alt="Image of Jeremy Robson"
+            />
+            <div class="profile-card__head-caption">
+              Report for
+              <h1 class="profile-card__name">Jeremy Robson</h1>
+            </div>
+          </div>
+          <div class="profile-card__body">
+            <div class="profile-card__filter-item">
+              <a class="profile-card__filter-link" href=""> Daily </a>
+            </div>
+            <div class="profile-card__filter-item">
+              <a class="profile-card__filter-link active" href=""> Weekly </a>
+            </div>
+            <div class="profile-card__filter-item">
+              <a class="profile-card__filter-link" href=""> Monthly </a>
+            </div>
+          </div>
+        </div>
+        <div class="activity-list">
+          <div class="activity-card">
+            <img
+              class="activity-card__activity-icon"
+              src="assets/img/icon-work.svg"
+              alt=""
+            />
+            <div class="activity-card__container">
+              <div class="activity-card__head">
+                <h2 class="activity-card__title">Work</h2>
+                <a href="#" class="activity-card__ellipsis-icon">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="activity-card__body">
+                <span class="activity-card__current"> 32hrs </span>
+                <span class="activity-card__previous"> Last Week - 36hrs </span>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img
+              class="activity-card__activity-icon"
+              src="assets/img/icon-work.svg"
+              alt=""
+            />
+            <div class="activity-card__container">
+              <div class="activity-card__head">
+                <h2 class="activity-card__title">Work</h2>
+                <a href="#" class="activity-card__ellipsis-icon">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="activity-card__body">
+                <span class="activity-card__current"> 32hrs </span>
+                <span class="activity-card__previous"> Last Week - 36hrs </span>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img
+              class="activity-card__activity-icon"
+              src="assets/img/icon-work.svg"
+              alt=""
+            />
+            <div class="activity-card__container">
+              <div class="activity-card__head">
+                <h2 class="activity-card__title">Work</h2>
+                <a href="#" class="activity-card__ellipsis-icon">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="activity-card__body">
+                <span class="activity-card__current"> 32hrs </span>
+                <span class="activity-card__previous"> Last Week - 36hrs </span>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img
+              class="activity-card__activity-icon"
+              src="assets/img/icon-work.svg"
+              alt=""
+            />
+            <div class="activity-card__container">
+              <div class="activity-card__head">
+                <h2 class="activity-card__title">Work</h2>
+                <a href="#" class="activity-card__ellipsis-icon">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="activity-card__body">
+                <span class="activity-card__current"> 32hrs </span>
+                <span class="activity-card__previous"> Last Week - 36hrs </span>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img
+              class="activity-card__activity-icon"
+              src="assets/img/icon-work.svg"
+              alt=""
+            />
+            <div class="activity-card__container">
+              <div class="activity-card__head">
+                <h2 class="activity-card__title">Work</h2>
+                <a href="#" class="activity-card__ellipsis-icon">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="activity-card__body">
+                <span class="activity-card__current"> 32hrs </span>
+                <span class="activity-card__previous"> Last Week - 36hrs </span>
+              </div>
+            </div>
+          </div>
+          <div class="activity-card">
+            <img
+              class="activity-card__activity-icon"
+              src="assets/img/icon-work.svg"
+              alt=""
+            />
+            <div class="activity-card__container">
+              <div class="activity-card__head">
+                <h2 class="activity-card__title">Work</h2>
+                <a href="#" class="activity-card__ellipsis-icon">
+                  <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div class="activity-card__body">
+                <span class="activity-card__current"> 32hrs </span>
+                <span class="activity-card__previous"> Last Week - 36hrs </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="activity-list">
-        <div class="activity-card">
-          <img class="activity-card__activity-icon" src="assets/img/icon-work.svg" alt="">
-          <div class="activity-card__container">
-            <div class="activity-card__text-row">
-              <h2 class="activity-card__title">
-                Work
-              </h2>
-              <a href="#" class="activity-card__ellipsis-icon">
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-            <div class="activity-card__text-row">
-              <span class="activity-card__current">
-                32hrs
-              </span>
-              <span class="activity-card__previous">
-                Last Week - 36hrs
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="activity-card">
-          <img class="activity-card__activity-icon" src="assets/img/icon-work.svg" alt="">
-          <div class="activity-card__container">
-            <div class="activity-card__text-row">
-              <h2 class="activity-card__title">
-                Work
-              </h2>
-              <a href="#" class="activity-card__ellipsis-icon">
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-            <div class="activity-card__text-row">
-              <span class="activity-card__current">
-                32hrs
-              </span>
-              <span class="activity-card__previous">
-                Last Week - 36hrs
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="activity-card">
-          <img class="activity-card__activity-icon" src="assets/img/icon-work.svg" alt="">
-          <div class="activity-card__container">
-            <div class="activity-card__text-row">
-              <h2 class="activity-card__title">
-                Work
-              </h2>
-              <a href="#" class="activity-card__ellipsis-icon">
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-            <div class="activity-card__text-row">
-              <span class="activity-card__current">
-                32hrs
-              </span>
-              <span class="activity-card__previous">
-                Last Week - 36hrs
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="activity-card">
-          <img class="activity-card__activity-icon" src="assets/img/icon-work.svg" alt="">
-          <div class="activity-card__container">
-            <div class="activity-card__text-row">
-              <h2 class="activity-card__title">
-                Work
-              </h2>
-              <a href="#" class="activity-card__ellipsis-icon">
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-            <div class="activity-card__text-row">
-              <span class="activity-card__current">
-                32hrs
-              </span>
-              <span class="activity-card__previous">
-                Last Week - 36hrs
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="activity-card">
-          <img class="activity-card__activity-icon" src="assets/img/icon-work.svg" alt="">
-          <div class="activity-card__container">
-            <div class="activity-card__text-row">
-              <h2 class="activity-card__title">
-                Work
-              </h2>
-              <a href="#" class="activity-card__ellipsis-icon">
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-            <div class="activity-card__text-row">
-              <span class="activity-card__current">
-                32hrs
-              </span>
-              <span class="activity-card__previous">
-                Last Week - 36hrs
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="activity-card">
-          <img class="activity-card__activity-icon" src="assets/img/icon-work.svg" alt="">
-          <div class="activity-card__container">
-            <div class="activity-card__text-row">
-              <h2 class="activity-card__title">
-                Work
-              </h2>
-              <a href="#" class="activity-card__ellipsis-icon">
-                <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill-rule="evenodd"/></svg>
-              </a>
-            </div>
-            <div class="activity-card__text-row">
-              <span class="activity-card__current">
-                32hrs
-              </span>
-              <span class="activity-card__previous">
-                Last Week - 36hrs
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-  </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <script src="assets/js/script.js"></script>
-</body>
-
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>

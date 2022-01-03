@@ -12,15 +12,19 @@ body {
 
 main {
     background-color: hsl(226, 43%, 10%);
+    min-height: 100vh;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .container {
-    padding: 0 24px;
+    padding: 80px 24px;
     display: grid;
-    gap: 30px;
+    gap: 24px;
     grid-template-columns: 1fr;
-    max-width: 1110px;
+    width: 100%;
+    max-width: 1158px;
     margin: auto;
 }
 
@@ -28,6 +32,58 @@ main {
     border-radius: 14px;
     background-color: hsl(235, 46%, 20%);
     /* margin-bottom: 24px; */
+}
+
+.profile-card__head {
+    display: flex;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 14px;
+    align-items: center;
+    padding: 31px 28px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile-card__profile-picture {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    margin-right: 17px;
+}
+
+.profile-card__name {
+    font-size: 24px;
+    font-weight: 300;
+    color: #fff;
+}
+
+.profile-card__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.profile-card__filter-item {
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.profile-card__filter-link {
+    color: hsl(235, 45%, 61%);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+
+.profile-card__filter-link:hover {
+    color: #fff;
+}
+
+.profile-card__filter-link.active {
+    color: #fff;
 }
 
 .activity-card:hover {
@@ -38,22 +94,10 @@ main {
 }
 
 .activity-list {
-    /* display: flex; */
-    width: 100%;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(1fr);
 }
-
-@media (min-width: 992px) { 
-    .container {
-        padding: 0;
-        gap: 30px;
-        grid-template-columns: 1fr 3fr;
-    }
-    .activity-list {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
-    }
- }
 
 .activity-card {
     border-radius: 14px;
@@ -78,23 +122,31 @@ main {
     position: relative;
     padding: 24px 28px;
     transition: all .3s ease;
+    height: 100%;
 }
 
-.activity-card__text-row {
+.activity-card__head {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 7px;
+}
+
+.activity-card__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .activity-card__title {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 7px;
 }
 
 .activity-card__ellipsis-icon {
     fill: #BBC0FF;
     transition: all ease .3s;
+    display: inline-flex;
 }
 .activity-card__ellipsis-icon:hover {
     fill: #fff;
@@ -111,3 +163,81 @@ main {
     font-size: 15px;
     color: hsl(236, 100%, 87%)
 }
+
+@media (min-width: 768px) { 
+    .activity-list {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+@media (min-width: 992px) { 
+    .container {
+        gap: 30px;
+        grid-template-columns: 1fr 3fr;
+        padding: 24px;
+    }
+
+    .profile-card {
+        position: relative;
+        padding-bottom: 164px;
+    }
+
+    .profile-card__head {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 34px 29px;
+        height: 100%;
+    }
+
+    .profile-card__profile-picture {
+        width: 84px;
+        height: 84px;
+        margin-bottom: 40px;
+    }
+
+    .profile-card__name {
+        font-size: 40px;
+        margin-top: 3px;
+    }
+
+    .profile-card__body {
+        grid-template-columns: 1fr;
+        padding-bottom: 23px;
+        padding-top: 16px;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+
+    .profile-card__filter-item {
+        padding: 10px 32px;
+        text-align: left;
+    }
+
+    .activity-list {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .activity-card {
+        padding-top: 45px;
+    }
+    .activity-card__head {
+        margin-bottom: 25px;
+    }
+    .activity-card__body {
+       flex-direction: column;
+       align-items: flex-start;
+    }
+    .activity-card__container {
+        padding: 30px;
+        padding-bottom: 32px;
+    }
+    .activity-card__current {
+        font-size: 56px;
+        margin-bottom: 8px;
+    }
+ }
