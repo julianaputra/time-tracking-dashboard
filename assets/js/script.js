@@ -1,6 +1,6 @@
 let activities = [];
-let activeTimeframe = "daily";
-let activeFrame = "Day";
+let activeTimeframe = "weekly";
+let activeFrame = "Week";
 
 fetch("assets/json/data.json")
   .then((response) => {
