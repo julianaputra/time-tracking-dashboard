@@ -18,6 +18,18 @@ main {
     align-items: center;
 }
 
+.attribution {
+    background-color: hsl(226, 43%, 10%);
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.attribution a {
+    color: #fff;
+}
+
 .container {
     padding: 80px 24px;
     display: grid;
@@ -80,6 +92,7 @@ main {
 
 .profile-card__filter-link:hover {
     color: #fff;
+    cursor: pointer;
 }
 
 .profile-card__filter-link.active {
